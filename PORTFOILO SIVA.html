@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="portfolio.css" href="portfolio.css">
+</head>
+<body>
+  <style>
+    :root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), 
+                url("C:\Users\sivam\OneDrive\Pictures\Screenshots 1\5651980.webp") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    font-size: 1.2rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+    background-image: url('https://th.bing.com/th/id/OIP.Tm8dMSqYN9G_MhAk136CSwHaEK?w=324&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size: cover; /* Make the background image cover the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: scroll; /* Ensure the background image scrolls with the page */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header-content h1, .header-content p {
+    margin: 2rem 0;
+    font-family: 'Unica One', cursive;
+   
+
+}
+
+#about {
+    background-color: #ffffff; 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#portfolio {
+    background-color: #0fbfbf; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+}
+
+#contact {
+    background-color: #ffbc4b; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #0fbfbf; 
+
+}
+.instagram{
+  display: inline-block;
+            margin-right: 20px; /* Adjust the space between links */
+            text-decoration: none;
+            color: black;
+
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Additional Styles */
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+  text-align: center;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 50%; 
+        margin: 0 auto; 
+        
+    }
+    
+}
+
+.content {
+    padding: 20px;
+}
+
+  }
+
+  </style>
+    <header class="header-background">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li><br>
+                <li><a href="#portfolio">Portfolio</a></li><br>
+                <li><a href="#contact">Contact</a></li><br>
+            </ul>
+        </nav>
+        <div id="profile" class="header-content">
+            <img src="C:\Users\sivam\Downloads\m.png" alt="Profile Photo of SIVAMANI">
+            <h1>Hi, my name is<br> SIVAMANI NANDYALA</h1>
+            <p><b>STUDENT | WEBDEVELOPER | TECH ENTHUSIAST</b></p>
+        </div>
+        <div class="instagram">
+          <a href="" target="_blank">
+            <img src="https://th.bing.com/th?id=OIP.enG2QUteotudVRb6SlpX8wHaHZ&w=250&h=249&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Instagram" style="width:60px;height:60px;">
+            <a href="www.linkedin.com/in/
+            sivamani-nandyala-414627282
+            " target="_blank">
+            <img src="https://th.bing.com/th?id=OIP.VArJwZMxFN-qHnD8Xue-QAHaHa&w=249&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Linkdein" style="width:60px;height:60px;">
+            <a href="https://www.coursera.org/user/ad85e5b661f35c75118832599963dc77" target="_blank">
+              <img src="https://th.bing.com/th?id=OIP.OOA-qeL4-j7MrltFBLIz7wHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Linkdein" style="width:60px;height:60px;">
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>~ About Me ~</h2>
+            <img src="C:\Users\sivam\OneDrive\Pictures\personal\IMG_20230816_112851_599.jpg" alt="sivamani's Profile" class="profile-photo">
+            <p>Hello! I'm currently pursuing my B.Tech in Computer Science and Business Systems Engineering at GITAM University. With a strong foundation in both technical and business aspects, I am dedicated to developing my skills in web development and design.    
+            <P> My journey in tech has been driven by a passion for creating intuitive and impactful digital experiences. I am eager to learn, grow, and contribute to innovative projects that make a difference. Welcome to my portfolio, where I showcase my work and the skills I've honed so far. Let's build something great together!
+            </P>
+        </section>
+
+  
+            <h2>~ My Work ~</h2>
+            <div class="project" id="project1">project1</div>
+            <div class="project" id="project2">project2</div>
+            <div class="project" id="project3">project3</div>
+            <div class="project" id="project4">project4</div>        
+        </section>
+        <section id="contact">
+            <h2>~ Keep in Touch ~</h2>
+            <button class="btn btn-default td-btn outline white">Send me a message!</button>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 SIVAMANI — All Rights Reserved</p>
+    </footer>
+</body>
+</html>
